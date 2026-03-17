@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Neev Thakkar — Business Student, Aspiring Entrepreneur. Dual-degree at NM College and IIM Bangalore." />
+  <title>Neev Thakkar — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Home">NT.</a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact"    class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg-orb hero-bg-orb--1" aria-hidden="true"></div>
+    <div class="hero-bg-orb hero-bg-orb--2" aria-hidden="true"></div>
+    <div class="hero-bg-orb hero-bg-orb--3" aria-hidden="true"></div>
+    <div class="hero-noise" aria-hidden="true"></div>
+
+    <div class="hero-content">
+
+      <!-- Avatar + status badge row -->
+      <div class="hero-top animate-in" style="--delay: 0ms">
+        <img src="profile.jpg" alt="Neev Thakkar" class="hero-avatar" width="64" height="64" />
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          Mumbai, India &nbsp;·&nbsp; Open to Opportunities
+        </div>
+      </div>
+
+      <h1 class="hero-name animate-in" style="--delay: 120ms">Neev Thakkar</h1>
+
+      <!-- CSS typewriter effect on subtitle -->
+      <p class="hero-title animate-in" style="--delay: 240ms">
+        <span class="typewriter">Business Student &amp; Aspiring Entrepreneur </span>
+      </p>
+
+      <p class="hero-tagline animate-in" style="--delay: 360ms">
+        Dual-degree candidate at <em>NM College</em> and <em>IIM Bangalore</em> —<br class="break-md" />
+        Bishopite · Zonal Representative · building his own path.
+      </p>
+
+      <div class="hero-actions animate-in" style="--delay: 480ms">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact"  class="btn btn--ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint animate-in" style="--delay: 700ms" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MARQUEE TICKER — scrolling skill strip between hero and about
+  ============================================================ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">B.Com Management &amp; Finance</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">BBA Digital Business &amp; Entrepreneurship</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">IIM Bangalore</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">NM College Mumbai</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Zonal Representative</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">NSE NCCMP Trading</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Bishop's School Pune</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Distribution Business</span>
+      <span class="ticker-sep">◈</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item">B.Com Management &amp; Finance</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">BBA Digital Business &amp; Entrepreneurship</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">IIM Bangalore</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">NM College Mumbai</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Zonal Representative</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">NSE NCCMP Trading</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Bishop's School Pune</span>
+      <span class="ticker-sep">◈</span>
+      <span class="ticker-item">Distribution Business</span>
+      <span class="ticker-sep">◈</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-number" aria-hidden="true">01</span>
+        <h2 class="section-title" id="about-heading">About</h2>
+      </header>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p class="about-lead">
+            I'm a Bishopite — six years at
+            <strong>The Bishop's Co-Ed School, Kalyani Nagar, Pune</strong>,
+            earning the <strong>"Best Boarder" award</strong> and serving as
+            <strong>Prefect</strong> in my final year.
+          </p>
+          <p>
+            After returning to Mumbai, I completed my 11th and 12th from
+            <strong>Mithibai College</strong>, and am now simultaneously pursuing a
+            <strong>B.Com in Management &amp; Finance (BMF)</strong> at NM College
+            and a <strong>BBA in Digital Business &amp; Entrepreneurship</strong> at
+            IIM Bangalore, where I also serve as <strong>Zonal Representative</strong>
+            — acting as a point of contact between IIMB and students in my zone.
+          </p>
+          <p>
+            My family is based in <strong>Beed, Maharashtra</strong> — a joint family
+            of seven. My father and uncle run a distribution business of
+            <strong>Veedol engine oil</strong> and <strong>SJR Tyres</strong>, and are
+            dealers of <strong>JK Tyres</strong>. I've grown up surrounded by business
+            conversations, which shaped my commercial instincts from an early age.
+          </p>
+          <p>
+            I'm currently enrolled in the <strong>NSE NCCMP trading course</strong> to
+            build structured capital markets knowledge alongside my academics.
+            In my free time, I enjoy travelling, photography, reading, cooking,
+            and listening to music.
+          </p>
+
+          <div class="about-qualities">
+            <span class="quality-tag">Bishopite</span>
+            <span class="quality-tag">Zonal Representative</span>
+            <span class="quality-tag">Finance enthusiast</span>
+            <span class="quality-tag">Dual-degree student</span>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Degrees in Progress</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3×</span>
+            <span class="stat-label">Best Boarder Award</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Years at Bishop's</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">ZR</span>
+            <span class="stat-label">Zonal Representative</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section id="education" class="section section--alt" aria-labelledby="education-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-number" aria-hidden="true">02</span>
+        <h2 class="section-title" id="education-heading">Education</h2>
+      </header>
+
+      <div class="timeline">
+
+        <article class="timeline-item" aria-label="IIM Bangalore">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025 — Present</span>
+                <span class="timeline-badge">Active</span>
+              </div>
+              <h3 class="timeline-degree">BBA – Digital Business &amp; Entrepreneurship</h3>
+              <p class="timeline-institution">Indian Institute of Management Bangalore (IIMB)</p>
+            </div>
+            <p class="timeline-desc">
+              Online programme focused on digital strategy, entrepreneurship frameworks,
+              venture building, and modern business model design. Also serving as
+              <strong>Zonal Representative</strong> — acting as liaison between IIMB
+              and students, organising zone events, and managing conflict resolution.
+            </p>
+            <div class="timeline-tags">
+              <span class="chip">Entrepreneurship</span>
+              <span class="chip">Digital Strategy</span>
+              <span class="chip">Zonal Representative</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item" aria-label="NM College">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">2025 — Present</span>
+                <span class="timeline-badge">Active</span>
+              </div>
+              <h3 class="timeline-degree">B.Com – Management &amp; Finance (BMF)</h3>
+              <p class="timeline-institution">Narsee Monjee College of Commerce &amp; Economics, Mumbai University</p>
+            </div>
+            <p class="timeline-desc">
+              NEP-aligned programme covering financial accounting, business law,
+              economics, management theory, and quantitative methods —
+              running concurrently with the IIMB BBA programme.
+            </p>
+            <div class="timeline-tags">
+              <span class="chip">Financial Accounting</span>
+              <span class="chip">Business Law</span>
+              <span class="chip">Economics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item" aria-label="Mithibai College">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 — 2025</span>
+                <span class="timeline-badge timeline-badge--done">Completed</span>
+              </div>
+              <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+              <p class="timeline-institution">Mithibai College, Mumbai · Commerce Stream</p>
+            </div>
+            <p class="timeline-desc">
+              Commerce stream covering accountancy, economics, organisation of
+              commerce, and business studies. Transitioned back to Mumbai after
+              six years at Bishop's School and re-established full academic footing.
+            </p>
+            <div class="timeline-tags">
+              <span class="chip">Accountancy</span>
+              <span class="chip">Economics</span>
+              <span class="chip">Commerce</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item" aria-label="Bishop's School">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">2017 — 2023 · 6 years / 5 academic years</span>
+                <span class="timeline-badge timeline-badge--done">Completed</span>
+              </div>
+              <h3 class="timeline-degree">Secondary School · 5th – 10th Grade</h3>
+              <p class="timeline-institution">The Bishop's Co-Ed School, Kalyani Nagar, Pune</p>
+            </div>
+            <p class="timeline-desc">
+              Six years as a boarder at one of Pune's most respected schools.
+              Earned the <strong>"Best Boarder" award</strong> for discipline and
+              contribution to school community. Appointed as a
+              <strong>Prefect</strong> in 10th grade — a leadership position
+              recognised for character and consistent positive conduct.
+            </p>
+            <div class="timeline-tags">
+              <span class="chip">Best Boarder</span>
+              <span class="chip">School Prefect</span>
+              <span class="chip">Bishopite</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-number" aria-hidden="true">03</span>
+        <h2 class="section-title" id="skills-heading">Skills</h2>
+      </header>
+
+      <div class="skills-grid">
+
+        <div class="skills-category card">
+          <h3 class="skills-category-title">
+            <span class="skills-icon" aria-hidden="true">◈</span>
+            Business &amp; Finance
+          </h3>
+          <div class="skills-chips">
+            <span class="chip chip--filled">Financial Accounting</span>
+            <span class="chip chip--filled">Business Communication</span>
+            <span class="chip chip--filled">Distribution &amp; Logistics</span>
+            <span class="chip chip--filled">Client Negotiation</span>
+            <span class="chip chip--filled">Scheme Planning</span>
+            <span class="chip chip--filled">NSE NCCMP Trading</span>
+            <span class="chip chip--filled">Cost &amp; Margin Analysis</span>
+          </div>
+        </div>
+
+        <div class="skills-category card">
+          <h3 class="skills-category-title">
+            <span class="skills-icon" aria-hidden="true">◈</span>
+            Digital &amp; Technology
+          </h3>
+          <div class="skills-chips">
+            <span class="chip chip--filled">HTML5 &amp; CSS3</span>
+            <span class="chip chip--filled">AI Tools &amp; Workflows</span>
+            <span class="chip chip--filled">Prompt Engineering</span>
+            <span class="chip chip--filled">Research &amp; Synthesis</span>
+            <span class="chip chip--filled">Productivity Systems</span>
+            <span class="chip chip--filled">Data Interpretation</span>
+          </div>
+        </div>
+
+        <div class="skills-category card">
+          <h3 class="skills-category-title">
+            <span class="skills-icon" aria-hidden="true">◈</span>
+            Leadership &amp; Soft Skills
+          </h3>
+          <div class="skills-chips">
+            <span class="chip chip--filled">Discipline &amp; Self-Management</span>
+            <span class="chip chip--filled">Critical Thinking</span>
+            <span class="chip chip--filled">Conflict Resolution</span>
+            <span class="chip chip--filled">Time Management</span>
+            <span class="chip chip--filled">Decision-Making</span>
+            <span class="chip chip--filled">Team Leadership</span>
+          </div>
+        </div>
+
+        <div class="skills-category card">
+          <h3 class="skills-category-title">
+            <span class="skills-icon" aria-hidden="true">◈</span>
+            Languages &amp; Interests
+          </h3>
+          <div class="skills-chips">
+            <span class="chip chip--filled">English — Fluent</span>
+            <span class="chip chip--filled">Hindi — Native</span>
+            <span class="chip chip--filled">Gujarati — Native</span>
+            <span class="chip chip--filled">Photography</span>
+            <span class="chip chip--filled">Travelling</span>
+            <span class="chip chip--filled">Cooking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="section section--alt" aria-labelledby="projects-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-number" aria-hidden="true">04</span>
+        <h2 class="section-title" id="projects-heading">Projects</h2>
+      </header>
+
+      <div class="projects-grid">
+
+        <article class="project-card card" aria-label="Distribution Business">
+          <div class="project-card-top">
+            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-type">Family Business</div>
+          </div>
+          <h3 class="project-title">Veedol &amp; JK Tyres Distribution</h3>
+          <p class="project-desc">
+            My family runs a distribution business for Veedol engine oil and
+            SJR Tyres, and is an authorised dealer of JK Tyres. Growing up in
+            this environment gave me hands-on exposure to vendor management,
+            dealer networks, pricing strategy, and day-to-day commercial
+            operations from a very young age.
+          </p>
+          <footer class="project-footer">
+            <div class="project-tags">
+              <span class="chip chip--mono">Distribution</span>
+              <span class="chip chip--mono">Operations</span>
+              <span class="chip chip--mono">B2B</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="project-card card" aria-label="NSE NCCMP">
+          <div class="project-card-top">
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-type">Finance</div>
+          </div>
+          <h3 class="project-title">NSE NCCMP Trading Course</h3>
+          <p class="project-desc">
+            Currently enrolled in the NSE's NCCMP certification programme to
+            build structured knowledge of capital markets, equity trading,
+            derivatives, and financial instruments — bridging the gap between
+            academic finance and real-world market understanding.
+          </p>
+          <footer class="project-footer">
+            <div class="project-tags">
+              <span class="chip chip--mono">NSE</span>
+              <span class="chip chip--mono">Capital Markets</span>
+              <span class="chip chip--mono">Trading</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="project-card card" aria-label="Personal Resume Website">
+          <div class="project-card-top">
+            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-type">Web Development</div>
+          </div>
+          <h3 class="project-title">Personal Resume Website</h3>
+          <p class="project-desc">
+            Designed and built this portfolio from scratch — semantic HTML5,
+            advanced CSS3 with custom properties, CSS Grid, Flexbox, responsive
+            breakpoints, glassmorphism navbar, typewriter animation, and a
+            scrolling ticker. No frameworks. Built as part of a college
+            web development module.
+          </p>
+          <footer class="project-footer">
+            <div class="project-tags">
+              <span class="chip chip--mono">HTML5</span>
+              <span class="chip chip--mono">CSS3</span>
+              <span class="chip chip--mono">Responsive</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       EXPERIENCE / ACHIEVEMENTS SECTION
+  ============================================================ -->
+  <section id="experience" class="section" aria-labelledby="experience-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-number" aria-hidden="true">05</span>
+        <h2 class="section-title" id="experience-heading">Experience &amp; Achievements</h2>
+      </header>
+
+      <div class="experience-list">
+
+        <article class="experience-item card" aria-label="Zonal Representative">
+          <div class="experience-left">
+            <time class="experience-year">Dec 2025 –<br>Present</time>
+          </div>
+          <div class="experience-divider" aria-hidden="true"></div>
+          <div class="experience-right">
+            <h3 class="experience-title">Zonal Representative</h3>
+            <p class="experience-org">IIM Bangalore BBA (DBE) · Volunteering</p>
+            <p class="experience-desc">
+              Serving as the elected Zonal Representative for my cohort at IIMB —
+              acting as the primary point of contact between IIM Bangalore and
+              students in my zone, organising and volunteering for IIMB DBE events
+              and fests, and handling conflict resolution within the zone.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-item card" aria-label="Dual Degree">
+          <div class="experience-left">
+            <time class="experience-year">2025 –<br>Present</time>
+          </div>
+          <div class="experience-divider" aria-hidden="true"></div>
+          <div class="experience-right">
+            <h3 class="experience-title">Dual-Degree Student — NM College + IIM Bangalore</h3>
+            <p class="experience-org">Mumbai &amp; Bangalore (Online)</p>
+            <p class="experience-desc">
+              Simultaneously enrolled in B.Com BMF at NM College (Mumbai University) and
+              BBA DBE at IIM Bangalore. Managing overlapping deadlines, credit requirements,
+              and commitments across two institutions while also serving as Zonal Representative.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-item card" aria-label="NSS Volunteer">
+          <div class="experience-left">
+            <time class="experience-year">2025 –<br>Present</time>
+          </div>
+          <div class="experience-divider" aria-hidden="true"></div>
+          <div class="experience-right">
+            <h3 class="experience-title">NSS Volunteer — Semester I &amp; II</h3>
+            <p class="experience-org">NM College, Mumbai University</p>
+            <p class="experience-desc">
+              Completed community service across four initiatives: Mumbai Climate Week
+              (Jio World Convention Centre, BKC), BMC Election Awareness Drive,
+              Mithi River Conservation Awareness, and Carter Road Beach Clean-Up.
+              Authored detailed academic reports for both semesters.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-item card" aria-label="School Prefect">
+          <div class="experience-left">
+            <time class="experience-year">2022 –<br>2023</time>
+          </div>
+          <div class="experience-divider" aria-hidden="true"></div>
+          <div class="experience-right">
+            <h3 class="experience-title">School Prefect &amp; Best Boarder</h3>
+            <p class="experience-org">The Bishop's Co-Ed School, Kalyani Nagar, Pune</p>
+            <p class="experience-desc">
+              Appointed Prefect in 10th grade at Bishop's — awarded for consistent
+              leadership, discipline, and positive conduct. Earned the "Best Boarder"
+              award across six years at the school, recognised for excellence in
+              character, community contribution, and boarding life.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
+    <div class="container container--narrow">
+
+      <header class="section-header section-header--centered">
+        <span class="section-number" aria-hidden="true">06</span>
+        <h2 class="section-title" id="contact-heading">Let's Connect</h2>
+        <p class="section-sub">
+          Open to collaborations, conversations, and opportunities.<br />
+          Looking to meet like-minded students, future co-founders, and business leaders.
+        </p>
+      </header>
+
+      <div class="contact-grid">
+
+        <a href="mailto:neevthakkar555@gmail.com" class="contact-card card" aria-label="Send an email">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <div class="contact-details">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">neevthakkar555@gmail.com</span>
+          </div>
+          <span class="contact-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="tel:+919850205326" class="contact-card card" aria-label="Call Neev">
+          <span class="contact-icon" aria-hidden="true">☏</span>
+          <div class="contact-details">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 98502 05326</span>
+          </div>
+          <span class="contact-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/neev-thakkar-07ab842b7/" target="_blank" rel="noopener" class="contact-card card" aria-label="View LinkedIn profile">
+          <span class="contact-icon" aria-hidden="true">⌘</span>
+          <div class="contact-details">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/neev-thakkar</span>
+          </div>
+          <span class="contact-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://github.com/NeevThakkar" target="_blank" rel="noopener" class="contact-card card" aria-label="View GitHub profile">
+          <span class="contact-icon" aria-hidden="true">◎</span>
+          <div class="contact-details">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/NeevThakkar</span>
+          </div>
+          <span class="contact-arrow" aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">NT.</div>
+      <p class="footer-text">
+        Designed &amp; built by <strong>Neev Thakkar</strong> · HTML5 &amp; CSS3 · 2025
+      </p>
+      <p class="footer-sub">B.Com Management &amp; Finance · NM College, Mumbai · Bishopite</p>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       MINIMAL JAVASCRIPT — nav scroll state + mobile toggle only
+  ============================================================ -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('navbar--scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('nav-links--open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-links--open');
+        toggle.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
+
+</body>
+</html>
